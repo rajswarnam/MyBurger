@@ -21,6 +21,7 @@ return(
         removeIngredients={()=>props.removeIngredients(ctrl.type)}
         disabledInfo={props.disabledInfo[ctrl.type]} />
     ))}
+    <button className={classes.OrderButton} disabled={!props.purchasable} onClick={props.showModal}>ORDER NOW</button>
     </div>
 )}
 
